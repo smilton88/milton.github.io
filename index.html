@@ -4,10 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Milton</title>
+    <title>Sam Milton</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
-<body>
-    <h1>Milton</h1>
-    <h2>This should be updated now<h2>
+<body>    
+    <section class="hero">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Sam Milton</a>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" style="fill:#fff;">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-body text-center">
+            <h2>Hello, I'm</h2>
+            <h1>Sam Milton</h1>
+            <p>A student learning full stack web development and<br> COO and developer of PIXEL Community</p>
+            <a class="btn" href="#about" role="button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hello, I am Sam Milton. I am currently a student learning Computer Science and hope to become a Full-Stack Web Developer or a Network Manager in the future. Currently, I have various projects that I work on as well as do some freelance development work. Furthermore, I have ran various game servers in games like Minecraft and Garry's Mod. These servers have allowed me to gain knowledge in team work, working with players and managing many backend services. If you would like to ask me any questions or enquire about any freelance work. Use the form down below or use contact me on one of my social media accounts.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <div class="header text-center">
+                <h1>What do I do?</h1>
+            </div>
+
+            <div class="row text-center">
+                <div class="col">
+                    <svg width="120" height="120" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/>
+                    </svg>
+                    <h2>Servers</h2>
+                    <p>I have and still do run game servers on various games such as Garry's Mod.</p>
+                </div>
+
+                <div class="col">
+                    <svg width="120" height="120" viewBox="0 0 24 24">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                    <h2>Design</h2>
+                    <p>I do a lot of website design work. This is mostly designing and creating websites.</p>
+                </div>
+
+                <div class="col">
+                    <svg width="120" height="120" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z"/>
+                    </svg>
+                    <h2>Web Apps</h2>
+                    <p>I am currently building various web apps. To find out more see my projects below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="header text-center">
+                <h1>My current projects</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="img/projects-gs.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Game Scripts</h5>
+                            <p class="card-text">Game Scripts is a lua script marketplace for Garry's Mod. It allows you to buy and sell scripts securely with no hassel.</p>
+                            <a href="#" class="btn disabled">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="img/projects-amcp.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">AMCP</h5>
+                            <p class="card-text">AMCP, a.k.a Advanced Minecraft Control Panel, is a fully featured control panel to controlling your Minecraft server.</p>
+                            <a href="#" class="btn disabled">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="img/projects-pf.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio</h5>
+                            <p class="card-text">My portfolio is a place I use to test new website ideas and designs, I update it regularly. It is also a great way to contact me.</p>
+                            <a href="#" class="btn disabled">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="header text-center">
+                <h1>Contact Me</h1>
+            </div>
+
+            <form class="form-horizontal" method="post" action="mail.php">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Archie Barker">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="abarker@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea  class="form-control" id="message" name="message" placeholder="Description"></textarea> 
+                </div>
+                <button type="submit" class="btn btn-submit">Send Message</button>
+                <button type="reset" class="btn">Reset Form</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="name">
+                        Sam Milton
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="copyright">
+                            © 2018 Sam Milton. All rights reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

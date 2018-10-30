@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: #F1F1F1;
+
+}
+
+
+
+section.hero {
+
+    background: url('../img/background.jpg');
+
+    background-repeat: no-repeat;
+
+    background-position: 50%;
+
+    background-attachment: fixed;
+
+}
+
+
+
+nav#navbar {
+
+    padding-top: 1.2rem;
+
+}
+
+
+
+nav .navbar-brand {
+
+    color: #fff;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+
+nav .nav-link {
+
+    color: #ddd;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: color 0.2s;
+
+}
+
+
+
+nav .nav-link:hover {
+
+    color: #fff;
+
+}
+
+
+
+.hero-body {
+
+    padding: 7rem 0.5rem;
+
+    color: #fff;
+
+}
+
+
+
+.hero-body h1 {
+
+    font-weight: bold;
+
+    font-size: calc(40px + (70 - 40) * (100vw - 300px) / (1000-300));
+
+    text-transform: uppercase;
+
+}
+
+
+
+.hero-body h2 {
+
+    font-weight: 200;
+
+    font-size: 18px;
+
+}
+
+
+
+.hero-body p {
+
+    font-size: calc(14px + (17 - 14) * (100vw - 300px) / (1000-300));
+
+}
+
+
+
+.hero-body .btn {
+
+    color: #fff;
+
+    border-color: #147DE6;
+
+    border-width: 2px;
+
+    border-radius: 100px;
+
+    margin-top: 1.5rem;
+
+}
+
+
+
+.hero-body .btn:hover {
+
+    color: #fff;
+
+    background: #147DE6;
+
+}
+
+
+
+section.about {
+
+    padding: 3rem 0;
+
+}
+
+
+
+section.about h1 {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+
+section.skills {
+
+    background: #fff;
+
+    padding: 3rem 0;
+
+}
+
+
+
+section.skills .header {
+
+    padding-bottom: 2rem;
+
+}
+
+
+
+section.skills img {
+
+    float: left;
+
+    padding: 1rem;
+
+}
+
+
+
+
+
+section.skills h1 {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+
+section.skills .skill {
+
+    border: 1px solid #111;
+
+    padding: 1rem;
+
+}
+
+
+
+section.skills .skill h2 {
+
+    font-size: 15px;
+
+}
+
+
+
+section.skills .column:not(:last-child) {
+
+    padding-right: 1rem;
+
+}
+
+
+
+section.skills .column:last-child {
+
+    padding-left: 1rem;
+
+}
+
+
+
+section.projects {
+
+    padding: 3rem 0;
+
+}
+
+
+
+section.projects .header {
+
+    padding: 0.5rem 0 1.5rem 0;
+
+}
+
+
+
+section.projects h1 {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+section.projects .card {
+    min-height: 300px;
+}
+
+section.projects .card-img-top, section.projects .card-body {
+
+    border-radius: 0px;
+
+}
+
+
+
+section.projects .btn {
+
+    color: #111;
+
+    border-color: #147DE6;
+
+    border-width: 2px;
+
+    border-radius: 100px;
+
+    margin-top: 1.5rem;
+
+}
+
+
+
+section.projects .btn:hover {
+
+    color: #fff;
+
+    background: #147DE6;
+
+}
+
+
+
+@media (max-width: 575px) {
+
+    section.projects .card {
+
+      margin-bottom: 2rem;
+
+    }
+
+}
+
+
+
+section.contact {
+
+    padding: 3rem 0;
+
+    color: #fff;
+
+    background: rgb(66, 70, 77);
+
+}
+
+
+
+section.contact .header {
+
+    padding: 0.5rem 0 1.5rem 0;
+
+}
+
+
+
+section.contact h1 {
+
+    color: #fff;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+
+section.contact input, section.contact textarea {
+
+    border-radius: 0px;
+
+}
+
+
+
+section.contact .btn {
+
+    background: transparent;
+
+    color: #fff;
+
+    border-color: #147DE6;
+
+    border-width: 2px;
+
+    border-radius: 10px;
+
+    margin-top: 1.5rem;
+
+}
+
+
+
+section.contact .btn:hover {
+
+    color: #fff;
+
+    background: #147DE6;
+
+}
+
+
+
+section.contact .btn-submit {
+
+    margin-right: .6rem;
+
+}
+
+
+
+footer {
+
+    background: url('../img/background.jpg');
+
+    background-repeat: no-repeat;
+
+    background-position: top;
+
+    background-attachment: fixed;
+
+    padding: 1rem 0;
+
+}
+
+
+
+footer .name {
+
+    color: #fff;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+
+footer .copyright {
+
+    font-size: 15px;
+
+    color: #fff;
+
+    text-align: right;
+
+}
