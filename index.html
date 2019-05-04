@@ -1,183 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sam Milton</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</head>
-<body>    
-    <section class="hero">
-        <nav class="navbar navbar-expand-lg" id="navbar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sam Milton</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+
+    <body>
+        <section class="hero is-medium">
+            <div class="hero-head">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href="/" class="navbar-item">Sam Milton</a>
+
+                            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="navbar-menu" id="navbar">
+                            <div class="navbar-end">
+                                <a class="navbar-item" href="#about">
+                                    About
+                                </a>
+
+                                <a class="navbar-item" href="#services">
+                                    Services
+                                </a>
+
+                                <a class="navbar-item" href="#portfolio">
+                                    Portfolio
+                                </a>
+
+                                <a class="navbar-item" href="#contact">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-body">
+                <div class="container">
+                    <h2>Hello, I'm</h2>
+                    <h1>Sam Milton</h1>
+                    <p>A student studding A Levels, IT Infrastructure <br> and
+                    web development.</p>
+                    <a href="https://twitter.com/sammilton88"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: white;"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                    <a href="https://github.com/smilton88"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: white;"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                    <a href="https://www.instagram.com/smilton88/"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: white;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
             <div class="container">
-                <a class="navbar-brand" href="#">Sam Milton</a>
-    
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg width="24" height="24" viewBox="0 0 24 24" style="fill:#fff;">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <h3 class="header">About Me</h3>
+                <p>Hello, I am Sam Milton, aka Sammy. I am currently an A Level student studding Computer Science, Mathematics and Physics. I am currently aiming to become an apprentice to study network engineering.  However, I also do a web development work as a freelancer. I have a lot of experience working with Game Servers, such as Garry's Mod or Minecraft. The past projects I have worked on as allowed be to improve the key skills such as team work and time management. I am enthusiastic about everything I do and aim to learn more as I go along. If you would like to enquire about any services I provide, feel free to message me through my social media accounts or by emailing me.</p>
             </div>
-        </nav>
+        </section>
 
-        <div class="hero-body text-center">
-            <h2>Hello, I'm</h2>
-            <h1>Sam Milton</h1>
-            <p>A student learning full stack web development and<br> COO and developer of PIXEL Community</p>
-            <a class="btn" href="#about" role="button">Learn More</a>
-        </div>
-    </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h3 class="header has-text-centered">What services do I offer?</h3>
 
-    <section class="about" id="about">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Hello, I am Sam Milton. I am currently a student learning Computer Science and hope to become a Full-Stack Web Developer or a Network Manager in the future. Currently, I have various projects that I work on as well as do some freelance development work. Furthermore, I have ran various game servers in games like Minecraft and Garry's Mod. These servers have allowed me to gain knowledge in team work, working with players and managing many backend services. If you would like to ask me any questions or enquire about any freelance work. Use the form down below or use contact me on one of my social media accounts.</p>
-        </div>
-    </section>
-
-    <section class="skills">
-        <div class="container">
-            <div class="header text-center">
-                <h1>What do I do?</h1>
-            </div>
-
-            <div class="row text-center">
-                <div class="col">
-                    <svg width="120" height="120" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/>
-                    </svg>
-                    <h2>Servers</h2>
-                    <p>I have and still do run game servers on various games such as Garry's Mod.</p>
-                </div>
-
-                <div class="col">
-                    <svg width="120" height="120" viewBox="0 0 24 24">
-                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <h2>Design</h2>
-                    <p>I do a lot of website design work. This is mostly designing and creating websites.</p>
-                </div>
-
-                <div class="col">
-                    <svg width="120" height="120" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z"/>
-                    </svg>
-                    <h2>Web Apps</h2>
-                    <p>I am currently building various web apps. To find out more see my projects below.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="header text-center">
-                <h1>My current projects</h1>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="">
-                        <img class="card-img-top" src="img/projects-gs.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Game Scripts</h5>
-                            <p class="card-text">Game Scripts is a lua script marketplace for Garry's Mod. It allows you to buy and sell scripts securely with no hassel.</p>
-                            <a href="#" class="btn disabled">Learn More</a>
-                        </div>
+                <div class="columns has-text-centered">
+                    <div class="column">
+                        <svg height="80" viewBox="0 0 496 496" width="80" xmlns="http://www.w3.org/2000/svg"><path d="m8 104h480v384h-480zm0 0" fill="#b8cbd9"/><path d="m8 400.390625c43.679688 25.167969 94.160156 39.609375 148 39.609375 165.6875 0 300-136.105469 300-304 0-10.808594-.574219-21.480469-1.664062-32h-446.335938zm0 0" fill="#e8eff4"/><path d="m424 400h-336v-136h-16c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32h336v136h16c17.671875 0 32 14.328125 32 32s-14.328125 32-32 32zm0 0" fill="#d1a339"/><path d="m148 376c126.351562 0 230.273438-77.144531 242.742188-176h-318.742188c-17.671875 0-32 14.328125-32 32s14.328125 32 32 32h16v106.007812c19.199219 3.902344 39.296875 5.992188 60 5.992188zm0 0" fill="#f0d365"/><path d="m456 368v-200c0-17.671875-14.328125-32-32-32h-16v200h16c17.671875 0 32 14.328125 32 32zm0 0" fill="#f0d365"/><path d="m40 232v192c0 17.671875 14.328125 32 32 32h16v-192h-16c-17.671875 0-32-14.328125-32-32zm0 0" fill="#d1a339"/><g fill="#4472b2"><path d="m136 248h32v32h-32zm0 0"/><path d="m328 248h32v32h-32zm0 0"/><path d="m232 136h32v32h-32zm0 0"/><path d="m152 152c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0"/><path d="m376 152c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0"/><path d="m8 8h480v96h-480zm0 0"/></g><path d="m72 56c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0" fill="#fff"/><path d="m136 56c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0" fill="#fff"/><path d="m200 56c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0" fill="#fff"/><path d="m88 464h-16c-22.054688 0-40-17.945312-40-40v-192c0-22.054688 17.945312-40 40-40h96v16h-96c-13.230469 0-24 10.769531-24 24s10.769531 24 24 24h16c4.425781 0 8 3.574219 8 8v192c0 4.425781-3.574219 8-8 8zm-40-200.015625v160.015625c0 13.230469 10.769531 24 24 24h8v-176h-8c-9 0-17.3125-2.984375-24-8.015625zm0 0"/><path d="m424 408h-336v-16h336c13.230469 0 24-10.769531 24-24s-10.769531-24-24-24h-16c-4.425781 0-8-3.574219-8-8v-200c0-4.425781 3.574219-8 8-8h16c22.054688 0 40 17.945312 40 40v200c0 22.054688-17.945312 40-40 40zm-8-80h8c9 0 17.3125 2.984375 24 8.015625v-168.015625c0-13.230469-10.769531-24-24-24h-8zm0 0"/><path d="m488 496h-480c-4.425781 0-8-3.574219-8-8v-480c0-4.425781 3.574219-8 8-8h480c4.425781 0 8 3.574219 8 8v480c0 4.425781-3.574219 8-8 8zm-472-16h464v-464h-464zm0 0"/><path d="m56 80c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.585938-8 8s3.585938 8 8 8 8-3.585938 8-8-3.585938-8-8-8zm0 0"/><path d="m120 80c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.585938-8 8s3.585938 8 8 8 8-3.585938 8-8-3.585938-8-8-8zm0 0"/><path d="m184 80c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.585938-8 8s3.585938 8 8 8 8-3.585938 8-8-3.585938-8-8-8zm0 0"/><path d="m8 96h480v16h-480zm0 0"/><path d="m176 344h144v16h-144zm0 0"/><path d="m192 312h112v16h-112zm0 0"/><path d="m168 288h-32c-4.425781 0-8-3.574219-8-8v-32c0-4.425781 3.574219-8 8-8h32c4.425781 0 8 3.574219 8 8v32c0 4.425781-3.574219 8-8 8zm-24-16h16v-16h-16zm0 0"/><path d="m360 288h-32c-4.425781 0-8-3.574219-8-8v-32c0-4.425781 3.574219-8 8-8h32c4.425781 0 8 3.574219 8 8v32c0 4.425781-3.574219 8-8 8zm-24-16h16v-16h-16zm0 0"/><path d="m264 176h-32c-4.425781 0-8-3.574219-8-8v-32c0-4.425781 3.574219-8 8-8h32c4.425781 0 8 3.574219 8 8v32c0 4.425781-3.574219 8-8 8zm-24-16h16v-16h-16zm0 0"/><path d="m352 248h-16c0-43.214844-31.519531-81.105469-73.320312-88.113281l2.640624-15.78125c49.414063 8.292969 86.679688 52.957031 86.679688 103.894531zm0 0"/><path d="m160 248h-16c0-50.9375 37.265625-95.601562 86.679688-103.886719l2.640624 15.78125c-41.800781 7-73.320312 44.890625-73.320312 88.105469zm0 0"/><path d="m136 176c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.585938-8 8s3.585938 8 8 8 8-3.585938 8-8-3.585938-8-8-8zm0 0"/><path d="m360 176c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.585938-8 8s3.585938 8 8 8 8-3.585938 8-8-3.585938-8-8-8zm0 0"/><path d="m152 144h80v16h-80zm0 0"/><path d="m264 144h80v16h-80zm0 0"/><path d="m288 352h-16v-32c0-.742188.105469-1.488281.304688-2.191406l15.046874-52.664063-39.351562-65.601562-39.351562 65.59375 15.046874 52.664062c.199219.710938.304688 1.457031.304688 2.199219v32h-16v-30.878906l-15.695312-54.921875c-.601563-2.128907-.304688-4.414063.832031-6.3125l48-80c2.886719-4.816407 10.832031-4.816407 13.71875 0l48 80c1.144531 1.898437 1.441406 4.183593.832031 6.3125l-15.6875 54.921875zm0 0"/><path d="m248 296c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.585938-8 8s3.585938 8 8 8 8-3.585938 8-8-3.585938-8-8-8zm0 0"/><path d="m240 192h16v64h-16zm0 0"/><path d="m328 192h80v16h-80zm0 0"/></svg>
+                        <h4>Web and Graphics <br> Design</h4>
+                    </div>
+                    
+                    <div class="column">
+                        <svg height="80" viewBox="0 0 496 496" width="80" xmlns="http://www.w3.org/2000/svg"><path d="m8 104h416v384h-416zm0 0" fill="#b8cbd9"/><path d="m8 104v325.007812c14.40625 1.914063 29.070312 2.992188 44 2.992188 182.015625 0 329.742188-146.496094 331.894531-328zm0 0" fill="#e8eff4"/><path d="m152 152h336v128h-336zm0 0" fill="#8bd2f5"/><path d="m8 8h416v96h-416zm0 0" fill="#e4725f"/><g fill="#f0d365"><path d="m72 56c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0"/><path d="m136 56c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0"/><path d="m200 56c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16 7.164062-16 16-16 16 7.164062 16 16zm0 0"/></g><path d="m424 496h-416c-4.425781 0-8-3.585938-8-8v-480c0-4.414062 3.574219-8 8-8h416c4.425781 0 8 3.585938 8 8v144h-16v-136h-400v464h400v-200h16v208c0 4.414062-3.574219 8-8 8zm0 0"/><path d="m56 80c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.59375-8 8s3.585938 8 8 8 8-3.59375 8-8-3.585938-8-8-8zm0 0"/><path d="m120 80c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.59375-8 8s3.585938 8 8 8 8-3.59375 8-8-3.585938-8-8-8zm0 0"/><path d="m184 80c-13.230469 0-24-10.769531-24-24s10.769531-24 24-24 24 10.769531 24 24-10.769531 24-24 24zm0-32c-4.414062 0-8 3.59375-8 8s3.585938 8 8 8 8-3.59375 8-8-3.585938-8-8-8zm0 0"/><path d="m8 96h416v16h-416zm0 0"/><path d="m488 288h-336c-4.425781 0-8-3.585938-8-8v-128c0-4.414062 3.574219-8 8-8h336c4.425781 0 8 3.585938 8 8v128c0 4.414062-3.574219 8-8 8zm-328-16h320v-112h-320zm0 0"/><path d="m176 176h32v16h-32zm0 0"/><path d="m224 176h64v16h-64zm0 0"/><path d="m304 176h80v16h-80zm0 0"/><path d="m400 176h16v16h-16zm0 0"/><path d="m432 176h32v16h-32zm0 0"/><path d="m176 208h80v16h-80zm0 0"/><path d="m272 208h32v16h-32zm0 0"/><path d="m320 208h48v16h-48zm0 0"/><path d="m384 208h80v16h-80zm0 0"/><path d="m176 240h128v16h-128zm0 0"/><path d="m320 240h16v16h-16zm0 0"/><path d="m352 240h64v16h-64zm0 0"/><path d="m432 240h32v16h-32zm0 0"/><path d="m227.199219 438.398438-64-48c-2.015625-1.511719-3.199219-3.878907-3.199219-6.398438s1.183594-4.886719 3.199219-6.398438l64-48 9.59375 12.796876-55.457031 41.601562 55.464843 41.601562zm0 0"/><path d="m332.800781 438.398438-9.601562-12.796876 55.464843-41.601562-55.464843-41.601562 9.59375-12.796876 64 48c2.015625 1.503907 3.199219 3.878907 3.199219 6.398438s-1.183594 4.886719-3.199219 6.398438zm0 0"/><path d="m256.121094 462.433594 32.03125-159.984375 15.6875 3.140625-32.027344 159.984375zm0 0"/></svg>
+                        <h4>Full Stack Web <br> Development</h4>
+                    </div>
+                    
+                    <div class="column">
+                        <svg height="80" viewBox="0 0 496 496" width="80" xmlns="http://www.w3.org/2000/svg"><g fill="#78b75b"><path d="m56 464c0 13.253906-10.746094 24-24 24s-24-10.746094-24-24 10.746094-24 24-24 24 10.746094 24 24zm0 0"/><path d="m56 336c0 13.253906-10.746094 24-24 24s-24-10.746094-24-24 10.746094-24 24-24 24 10.746094 24 24zm0 0"/><path d="m488 464c0 13.253906-10.746094 24-24 24s-24-10.746094-24-24 10.746094-24 24-24 24 10.746094 24 24zm0 0"/><path d="m488 336c0 13.253906-10.746094 24-24 24s-24-10.746094-24-24 10.746094-24 24-24 24 10.746094 24 24zm0 0"/><path d="m336 416v-32h-17.847656c-1.746094-7.6875-4.738282-14.886719-8.726563-21.425781l10.574219-10.574219-24-24-10.574219 10.574219c-6.539062-3.988281-13.738281-6.980469-21.425781-8.726563v-17.847656h-32v17.847656c-7.6875 1.746094-14.886719 4.738282-21.425781 8.726563l-10.574219-10.574219-24 24 10.574219 10.574219c-3.988281 6.539062-6.980469 13.738281-8.726563 21.425781h-17.847656v32h17.847656c1.746094 7.6875 4.738282 14.886719 8.726563 21.425781l-10.574219 10.574219 24 24 10.574219-10.574219c6.539062 3.988281 13.738281 6.980469 21.425781 8.726563v17.847656h32v-17.847656c7.6875-1.746094 14.886719-4.738282 21.425781-8.726563l10.574219 10.574219 24-24-10.574219-10.574219c3.988281-6.539062 6.980469-13.738281 8.726563-21.425781zm0 0"/></g><path d="m288 400c0 22.089844-17.910156 40-40 40s-40-17.910156-40-40 17.910156-40 40-40 40 17.910156 40 40zm0 0" fill="#fff"/><path d="m128 200h240v64h-240zm0 0" fill="#78b75b"/><path d="m128 104h240v64h-240zm0 0" fill="#78b75b"/><path d="m128 8h240v64h-240zm0 0" fill="#78b75b"/><path d="m144 168h208v32h-208zm0 0" fill="#857970"/><path d="m144 72h208v32h-208zm0 0" fill="#857970"/><path d="m264 496h-32c-4.414062 0-8-3.574219-8-8v-11.734375c-4.128906-1.296875-8.152344-2.945313-12.03125-4.914063l-6.3125 6.304688c-3.128906 3.128906-8.183594 3.128906-11.3125 0l-24-24c-3.128906-3.128906-3.128906-8.183594 0-11.3125l6.304688-6.304688c-1.976563-3.878906-3.617188-7.902343-4.921876-12.039062h-11.726562c-4.414062 0-8-3.574219-8-8v-32c0-4.425781 3.585938-8 8-8h11.726562c1.304688-4.136719 2.945313-8.160156 4.921876-12.039062l-6.304688-6.304688c-3.128906-3.128906-3.128906-8.183594 0-11.3125l24-24c3.128906-3.128906 8.183594-3.128906 11.3125 0l6.3125 6.304688c3.878906-1.96875 7.902344-3.617188 12.03125-4.914063v-11.734375c0-4.425781 3.585938-8 8-8h32c4.414062 0 8 3.574219 8 8v11.734375c4.128906 1.296875 8.152344 2.945313 12.03125 4.914063l6.3125-6.304688c3.128906-3.128906 8.183594-3.128906 11.3125 0l24 24c3.128906 3.128906 3.128906 8.183594 0 11.3125l-6.304688 6.304688c1.976563 3.878906 3.617188 7.902343 4.921876 12.039062h11.726562c4.414062 0 8 3.574219 8 8v32c0 4.425781-3.585938 8-8 8h-11.726562c-1.304688 4.136719-2.945313 8.160156-4.921876 12.039062l6.304688 6.304688c3.128906 3.128906 3.128906 8.183594 0 11.3125l-24 24c-3.128906 3.128906-8.183594 3.128906-11.3125 0l-6.3125-6.304688c-3.878906 1.96875-7.902344 3.617188-12.03125 4.914063v11.734375c0 4.425781-3.585938 8-8 8zm-24-16h16v-9.839844c0-3.734375 2.585938-6.96875 6.222656-7.800781 6.679688-1.519531 13.089844-4.136719 19.023438-7.765625 3.167968-1.929688 7.21875-1.441406 9.832031 1.167969l4.921875 4.925781 12.6875-12.6875-4.917969-4.921875c-2.617187-2.605469-3.097656-6.671875-1.167969-9.832031 3.621094-5.925782 6.230469-12.335938 7.757813-19.023438.824219-3.636718 4.066406-6.222656 7.800781-6.222656h9.839844v-16h-9.839844c-3.734375 0-6.976562-2.585938-7.800781-6.222656-1.519531-6.6875-4.136719-13.097656-7.757813-19.023438-1.929687-3.160156-1.449218-7.21875 1.167969-9.832031l4.917969-4.921875-12.6875-12.6875-4.921875 4.917969c-2.605469 2.625-6.664063 3.113281-9.832031 1.167969-5.933594-3.628907-12.335938-6.238282-19.023438-7.765626-3.636718-.816406-6.222656-4.058593-6.222656-7.792968v-9.839844h-16v9.839844c0 3.734375-2.585938 6.96875-6.222656 7.800781-6.679688 1.519531-13.089844 4.136719-19.023438 7.765625-3.152344 1.9375-7.21875 1.457031-9.832031-1.167969l-4.921875-4.925781-12.6875 12.6875 4.917969 4.921875c2.617187 2.605469 3.097656 6.671875 1.167969 9.832031-3.621094 5.925782-6.230469 12.335938-7.757813 19.023438-.824219 3.636718-4.066406 6.222656-7.800781 6.222656h-9.839844v16h9.839844c3.734375 0 6.976562 2.585938 7.800781 6.222656 1.519531 6.6875 4.136719 13.097656 7.757813 19.023438 1.929687 3.160156 1.449218 7.21875-1.167969 9.832031l-4.917969 4.921875 12.6875 12.6875 4.921875-4.917969c2.613281-2.609375 6.671875-3.105469 9.832031-1.167969 5.933594 3.628907 12.335938 6.238282 19.023438 7.765626 3.636718.816406 6.222656 4.058593 6.222656 7.792968zm0 0"/><path d="m248 448c-26.472656 0-48-21.527344-48-48s21.527344-48 48-48 48 21.527344 48 48-21.527344 48-48 48zm0-80c-17.648438 0-32 14.351562-32 32s14.351562 32 32 32 32-14.351562 32-32-14.351562-32-32-32zm0 0"/><path d="m368 272h-240c-4.414062 0-8-3.574219-8-8v-64c0-4.425781 3.585938-8 8-8h240c4.414062 0 8 3.574219 8 8v64c0 4.425781-3.585938 8-8 8zm-232-16h224v-48h-224zm0 0"/><path d="m368 176h-240c-4.414062 0-8-3.574219-8-8v-64c0-4.425781 3.585938-8 8-8h240c4.414062 0 8 3.574219 8 8v64c0 4.425781-3.585938 8-8 8zm-232-16h224v-48h-224zm0 0"/><path d="m368 80h-240c-4.414062 0-8-3.574219-8-8v-64c0-4.425781 3.585938-8 8-8h240c4.414062 0 8 3.574219 8 8v64c0 4.425781-3.585938 8-8 8zm-232-16h224v-48h-224zm0 0"/><path d="m136 72h16v32h-16zm0 0"/><path d="m136 168h16v32h-16zm0 0"/><path d="m344 72h16v32h-16zm0 0"/><path d="m344 168h16v32h-16zm0 0"/><path d="m32 496c-17.648438 0-32-14.351562-32-32s14.351562-32 32-32 32 14.351562 32 32-14.351562 32-32 32zm0-48c-8.824219 0-16 7.175781-16 16s7.175781 16 16 16 16-7.175781 16-16-7.175781-16-16-16zm0 0"/><path d="m32 368c-17.648438 0-32-14.351562-32-32s14.351562-32 32-32 32 14.351562 32 32-14.351562 32-32 32zm0-48c-8.824219 0-16 7.175781-16 16s7.175781 16 16 16 16-7.175781 16-16-7.175781-16-16-16zm0 0"/><path d="m240 264h16v48h-16zm0 0"/><path d="m88 392h72v16h-72zm0 0"/><path d="m88 472h-32v-16h24v-112h-24v-16h32c4.414062 0 8 3.574219 8 8v128c0 4.425781-3.585938 8-8 8zm0 0"/><path d="m464 496c-17.648438 0-32-14.351562-32-32s14.351562-32 32-32 32 14.351562 32 32-14.351562 32-32 32zm0-48c-8.824219 0-16 7.175781-16 16s7.175781 16 16 16 16-7.175781 16-16-7.175781-16-16-16zm0 0"/><path d="m464 368c-17.648438 0-32-14.351562-32-32s14.351562-32 32-32 32 14.351562 32 32-14.351562 32-32 32zm0-48c-8.824219 0-16 7.175781-16 16s7.175781 16 16 16 16-7.175781 16-16-7.175781-16-16-16zm0 0"/><path d="m336 392h72v16h-72zm0 0"/><path d="m440 472h-32c-4.414062 0-8-3.574219-8-8v-128c0-4.425781 3.585938-8 8-8h32v16h-24v112h24zm0 0"/><path d="m152 224h16v16h-16zm0 0"/><path d="m312 224h32v16h-32zm0 0"/><path d="m264 224h32v16h-32zm0 0"/><path d="m152 128h16v16h-16zm0 0"/><path d="m312 128h32v16h-32zm0 0"/><path d="m264 128h32v16h-32zm0 0"/><path d="m152 32h16v16h-16zm0 0"/><path d="m312 32h32v16h-32zm0 0"/><path d="m264 32h32v16h-32zm0 0"/></svg>
+                        <h4>Game and Web <br> Server Management</h4>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-sm">
-                    <div class="card" style="">
-                        <img class="card-img-top" src="img/projects-amcp.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">AMCP</h5>
-                            <p class="card-text">AMCP, a.k.a Advanced Minecraft Control Panel, is a fully featured control panel to controlling your Minecraft server.</p>
-                            <a href="#" class="btn disabled">Learn More</a>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h3 class="header has-text-centered">
+                    Have a look at my past projects
+                </h3>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image">
+                                 <img src="images/surfacefixer.png">
+                                </figure>
+                            </div>
+                            <div class="card-content"> 
+                                <div class="media">
+                                    <div class="media-content">
+                                        <a class="title is-4" href="https://surfacefixer.co.uk">Surface Fixer</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="content">
+                                    Surface Fixer is a small business located within the midlands. Their website was very out dated and didn't stand up to other competing companies. It now has a fresh modern look with being fully responsive and informative.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm">
-                    <div class="card" style="">
-                        <img class="card-img-top" src="img/projects-pf.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Portfolio</h5>
-                            <p class="card-text">My portfolio is a place I use to test new website ideas and designs, I update it regularly. It is also a great way to contact me.</p>
-                            <a href="#" class="btn disabled">Learn More</a>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/pixeldevs.png">
+                                </figure>
+                            </div>
+                            <div class="card-content">  
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">PIXEL Devs</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="content">
+                                    PIXEL Devs is my development organisation for game server and community related web content. If you are a gaming community and would like a development work it is your place to go! The website is currently being redesigned.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/portfolio.png">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <a class="title is-4" href="https://sammilton.me">Portfolio</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="content">
+                                    My portfolio page is designed and built from scratch using a css framework called Bulma. You can find what I am currently working on, contact information and my latest copy of my CV on this site.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="header text-center">
-                <h1>Contact Me</h1>
-            </div>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="header has-text-centered">
+                            Contact me
+                        </h3>
 
-            <form class="form-horizontal" method="post" action="mail.php">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Archie Barker">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="abarker@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea  class="form-control" id="message" name="message" placeholder="Description"></textarea> 
-                </div>
-                <button type="submit" class="btn btn-submit">Send Message</button>
-                <button type="reset" class="btn">Reset Form</button>
-            </form>
-        </div>
-    </section>
+                        <form action="mailto:smilton@pixeldevs.uk" method="post" enctype="text/plain">
+                            <div class="field">
+                                <label class="label">Name</label>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="name">
-                        Sam Milton
+                                <div class="control">
+                                    <input class="input" type="text" name="name" placeholder="Abbie Baker">
+                                </div>
+                            </div>
+                                      
+                            <div class="field">
+                                <label class="label">Email</label>
+
+                                <div class="control">
+                                    <input class="input" type="email" name="email" placeholder="jeff@pixeldevs.uk" value="">
+                                </div>
+                            </div>
+                                      
+                            <div class="field">
+                                <label class="label">Subject</label>
+
+                                <div class="control">
+                                    <div class="select">
+                                        <select name="subject">
+                                            <option>Web Design</option>
+                                            <option>Graphics Design</option>
+                                            <option>Web Development</option>
+                                            <option>Server Management</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div class="field">
+                                <label class="label">Message</label>
+
+                                <div class="control">
+                                    <textarea class="textarea" name="message" placeholder="Enter your message"></textarea>
+                                </div>
+                            </div>
+                                      
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-link">Submit</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="copyright">
-                            © 2018 Sam Milton. All rights reserved
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <h2>Sam Milton</h2>
+                    </div>
+                    <div class="column has-text-right">
+                        <p>© Sam Milton 2019. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
